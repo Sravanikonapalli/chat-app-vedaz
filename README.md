@@ -46,7 +46,7 @@ npm install
 Create a `.env` file in `frontend/`:
 
 ```env
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=https://chat-app-vedaz.onrender.com
 ```
 
 Run frontend:
