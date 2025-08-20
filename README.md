@@ -3,11 +3,6 @@
 A **full-stack realtime chat application** with authentication, 1:1 messaging, presence, and message statuses.
 
 ---
-## sample output video
-
-**run the code like follows which is shown in below video**
-
-sample output[]
 ## Setup
 
 ### 1. Clone Repo
