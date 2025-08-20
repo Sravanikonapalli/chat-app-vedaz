@@ -3,7 +3,11 @@
 A **full-stack realtime chat application** with authentication, 1:1 messaging, presence, and message statuses.
 
 ---
+## sample output video
 
+**run the code like follows which is shown in below video**
+
+sample output[]
 ## Setup
 
 ### 1. Clone Repo
@@ -74,8 +78,8 @@ Frontend runs at [http://localhost:3000](http://localhost:3000)
 ### Option 1: Register via UI
 
 - Open [http://localhost:3000/register](http://localhost:3000/register)
-- Create User 1 (e.g. `alice@example.com` / `password123`)
-- Create User 2 (e.g. `bob@example.com` / `password123`)
+- Create User 1 (e.g. `Sravani@example.com` / `password123`)
+- Create User 2 (e.g. `user@example.com` / `password123`)
 - Login with both in two different browser windows/tabs
 
 ### Option 2: Seed Users (directly in DB)
@@ -85,22 +89,27 @@ Insert documents into `users` collection:
 ```json
 [
     {
-        "name": "Alice",
-        "email": "alice@example.com",
-        "password": "<bcrypt hash of password123>"
+        "name": "Sravani",
+        "email": "sravani@example.com",
+        "password": "Sravani"
     },
     {
-        "name": "Bob",
-        "email": "bob@example.com",
-        "password": "<bcrypt hash of password123>"
+        "name": "user",
+        "email": "user@example.com",
+        "password": "User"
+    },
+    {
+        "name":"user1",
+        "email": "user1@gmail.com",
+        "password":"User1"
     }
 ]
 ```
 
 Now login with:
 
-- Alice → `alice@example.com` / `password123`
-- Bob → `bob@example.com` / `password123`
+- Sravani → `sravani@example.com` / `Sravani`
+- user → `user@example.com` / `user`
 
 ---
 
@@ -115,7 +124,7 @@ Now login with:
 
 ## Example Flow
 
-1. Alice logs in → sees Bob in user list
-2. Alice sends "Hi Bob" → message shows as Sent
-3. If Bob is online → status updates to Delivered
-4. When Bob opens chat → status updates to Read
+1. Sravani logs in → sees user in user list
+2. Sravani sends "Hi user" → message shows as Sent
+3. If user is online → status updates to Delivered
+4. When user opens chat → status updates to Read
